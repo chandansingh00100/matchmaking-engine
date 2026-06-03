@@ -1,0 +1,17 @@
+[package]
+name = "matchmaking_engine"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossbeam-channel = "0.5"
+parking_lot = "0.12"
+rand = "0.8"
+
+[[bin]]
+name = "matchmaking_engine"
+path = "src/main.rs"
+
+[[bin]]
+name = "load_test"
+path = "simulation/load_test.rs"
